@@ -1,0 +1,9 @@
+*.d
+*.o
+!Release/*.bin
+!Release/*/*.bin
+!Release/*/*/*.bin
+Duet2_RTOS/
+*~
+*orig
+.settings/
