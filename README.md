@@ -18,8 +18,8 @@ Modified Reprap firmware for Raise3D E2 Series Printers.
 ### Instructions under windows
 =================================================================
 
-1. Download and install the gcc cross-compiler:
-You need version 2018-q2-update. You can download an installer for this version from https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads.
+1.Download and install the gcc cross-compiler:
+You need version 2018-q2-update.You can download an installer for this version from https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads.
 
 2.Download and install Eclipse IDE for C/C++ Developers version 2018-09, from http://www.eclipse.org/downloads/eclipse-packages/. You do not need the Arduino add-on.
 
