@@ -15,10 +15,11 @@ Modified Reprap firmware for Raise3D E2 Series Printers.
 * Fixed the problem that the printing flowrate setting does not take effect on the right nozzle in Duplication Mode and Mirror Mode 
 
 ## Compilation guide:  
-###Instructions under windows
+### Instructions under windows
 =================================================================
+
 1. Download and install the gcc cross-compiler:
-- You need version 2018-q2-update. You can download an installer for this version from https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads.
+You need version 2018-q2-update. You can download an installer for this version from https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads.
 
 2.Download and install Eclipse IDE for C/C++ Developers version 2018-09, from http://www.eclipse.org/downloads/eclipse-packages/. You do not need the Arduino add-on.
 
@@ -40,7 +41,7 @@ Modified Reprap firmware for Raise3D E2 Series Printers.
 
 Note: you do not need to build the DuetWiFiSocketServer project, but it does need to be in the workspace because the RepRapFirmware project uses one of its include fies.
 
-###Instructions under macOS
+### Instructions under macOS
 =================================================================
 
 Using Homebrew-Cask makes it very easy to install new software on macOS: https://caskroom.github.io/
