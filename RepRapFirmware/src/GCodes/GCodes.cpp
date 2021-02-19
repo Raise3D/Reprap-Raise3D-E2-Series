@@ -195,6 +195,7 @@ void GCodes::Init()
 		frsTriggerCheck[i] = false;
 	}
 	raiseDuplicateOffset = 182.5;//365*0.5
+	raiseCurZPos = 0.0;
 }
 
 void GCodes::initProcessID()
@@ -531,7 +532,11 @@ void GCodes::Spin()
 		double zPos = (double)GetRaiseCurrentZPos();
 		if(zPos < 0)
 			zPos = 0;
-		platform.MessageF(UsbMessage,"ZMove:%.3f\n", zPos);
+		if(fabs(zPos - raiseCurZPos) > 1e-3)
+		{
+			raiseCurZPos = zPos;
+			platform.MessageF(UsbMessage,"ZMove:%.3f\n", raiseCurZPos);
+		}
 	}
 
 	// Get the GCodeBuffer that we want to process a command from. Give priority to auto-pause.

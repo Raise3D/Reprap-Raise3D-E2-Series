@@ -648,6 +648,7 @@ private:
 	bool isRaiseToolPosRestore;					//whether need to restore positions for tool change
 	float raiseDuplicateOffset;					//dupliate offset default value is (max(U_AXIS) + min(X_AXIS)) *0.5
 	long processID;					//process index of current process
+	double raiseCurZPos;
 
 
 	// Standard macro filenames

@@ -4350,7 +4350,7 @@ bool GCodes::HandleMcode(GCodeBuffer& gb, const StringRef& reply)
 			if (gb.Seen('S'))
 			{
 				uint32_t val = gb.GetUIValue();
-				if(val < 0 || val > 2)
+				if(0 <= val && val <= 2)
 				{
 					raisePrintMode = PrintMode(val);
 				}

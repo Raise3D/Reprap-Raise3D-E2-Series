@@ -24,7 +24,7 @@
 #endif
 
 # define VERSION MAIN_VERSION RTOSVER
-# define RAISEVERSION "0.2.716beta"
+# define RAISEVERSION "0.3.0219beta"
 #endif
 
 #ifndef DATE
